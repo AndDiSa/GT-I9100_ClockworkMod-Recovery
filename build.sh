@@ -4,7 +4,7 @@
 TOOLCHAIN="/android/cm-10.1/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-"
 
 # don't modify
-CWM_VERSION="6.0.2.7"
+CWM_VERSION="6.0.2.9"
 OUTDIR="out"
 INITRAMFS_SOURCE="../stage1/initramfs.list"
 INITRAMFS_ANDROID="ramdisk_android"
