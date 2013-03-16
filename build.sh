@@ -36,12 +36,12 @@ case "$1" in
 
         # create the android ramdisk
         cd ${INITRAMFS_ANDROID}
-        find . | cpio -o -H newc > ../stage1/files/boot.cpio
+        find . -not -name ".gitignore" | cpio -o -H newc > ../stage1/files/boot.cpio
         cd ..
 
         # create the recovery ramdisk
         cd ${INITRAMFS_RECOVERY}
-        find . | cpio -o -H newc > ../stage1/files/recovery.cpio
+        find . -not -name ".gitignore" | cpio -o -H newc > ../stage1/files/recovery.cpio
         cd ..
         
         # build the zimage
